@@ -10,7 +10,7 @@ source:
   sha256: 8554a7c672c563cdb1ae591d915f880f21f73fe137fb77b610433b66a8470cad
 
 build:
-  number: 0
+  number: 1000
   script: python setup.py install --single-version-externally-managed --record record.txt
   entry_points:
     - connexion = connexion.cli:main

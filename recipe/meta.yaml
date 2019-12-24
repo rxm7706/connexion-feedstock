@@ -1,4 +1,4 @@
-{% set version = "2.5.0" %}
+{% set version = "2.5.1" %}
 
 package:
   name: connexion
@@ -7,7 +7,7 @@ package:
 source:
   fn: {{ version }}.tar.gz
   url: https://github.com/zalando/connexion/archive/{{ version }}.tar.gz
-  sha256: 26e0a22001647d2acb8a5093d121ca2e633cebf82ecabae6453bee5f693d6d48
+  sha256: 6b449dde260d7882cb81c63265d82ef4812a8ea09f4a7b5c448125c2d16cd16c
 
 build:
   number: 0

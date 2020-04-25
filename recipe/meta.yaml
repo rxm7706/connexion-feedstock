@@ -1,4 +1,4 @@
-{% set version = "2.6.0" %}
+{% set version = "2.7.0" %}
 
 package:
   name: connexion
@@ -7,7 +7,7 @@ package:
 source:
   fn: {{ version }}.tar.gz
   url: https://github.com/zalando/connexion/archive/{{ version }}.tar.gz
-  sha256: 6f18a187a6b7110ace7af73bce67109204523d3e602cce9c1a0d553ed8d182bd
+  sha256: d702256d13238690b64f35ddd64d0bc4dd35839166cafc312447a830a282bbfc
 
 build:
   number: 0
@@ -46,7 +46,7 @@ test:
 about:
   home: https://github.com/zalando/connexion
   license: Apache-2.0
-  summary: 'Swagger/OpenAPI First framework for Python on top of Flask with automatic endpoint validation & OAuth2 support'
+  summary: Swagger/OpenAPI First framework for Python on top of Flask with automatic endpoint validation & OAuth2 support
   license_family: APACHE
   license_file: LICENSE.txt
   dev_url: https://github.com/zalando/connexion

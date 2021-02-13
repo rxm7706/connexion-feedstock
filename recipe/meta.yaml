@@ -1,34 +1,33 @@
+{% set name = "connexion" %}
 {% set version = "2.7.0" %}
 
 package:
-  name: connexion
+  name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  fn: {{ version }}.tar.gz
-  url: https://github.com/zalando/connexion/archive/{{ version }}.tar.gz
-  sha256: d702256d13238690b64f35ddd64d0bc4dd35839166cafc312447a830a282bbfc
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/connexion-{{ version }}.tar.gz
+  sha256: 1ccfac57d4bb7adf4295ba6f5e48f5a1f66057df6a0713417766c9b5235182ee
 
 build:
-  number: 0
+  number: 1
   noarch: python
-  script: python setup.py install --single-version-externally-managed --record record.txt
+  script: {{ PYTHON }} -m pip install . -vv
   entry_points:
     - connexion = connexion.cli:main
 
 requirements:
   build:
-    - python >=3
-    - setuptools
+    - python >=3.6
+    - pip
     - flake8
 
   run:
-    - python >=3
+    - python >=3.6
     - clickclick >=1.2
     - jsonschema >=2.5.1
     - pyyaml >=5.1
     - requests >=2.9.1
-    - six >=1.9
     - inflection >=0.3.1
     - flask >=1.0.4
     - openapi-spec-validator >=0.2.4
@@ -39,9 +38,11 @@ test:
     - connexion.apis
     - connexion.apps
     - connexion.decorators
-
   commands:
     - connexion --version
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/zalando/connexion
@@ -55,3 +56,4 @@ about:
 extra:
   recipe-maintainers:
     - rvalieris
+    - xylar

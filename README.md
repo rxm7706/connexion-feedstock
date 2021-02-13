@@ -5,11 +5,13 @@ Home: https://github.com/zalando/connexion
 
 Package license: Apache-2.0
 
-Feedstock license: BSD 3-Clause
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/connexion-feedstock/blob/master/LICENSE.txt)
 
 Summary: Swagger/OpenAPI First framework for Python on top of Flask with automatic endpoint validation & OAuth2 support
 
+Development: https://github.com/zalando/connexion
 
+Documentation: https://connexion.readthedocs.io/
 
 Current build status
 ====================
@@ -117,4 +119,5 @@ Feedstock Maintainers
 =====================
 
 * [@rvalieris](https://github.com/rvalieris/)
+* [@xylar](https://github.com/xylar/)
 

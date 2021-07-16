@@ -1,5 +1,5 @@
 {% set name = "connexion" %}
-{% set version = "2.8.0" %}
+{% set version = "2.9.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/connexion-{{ version }}.tar.gz
-  sha256: 446641b8494b5f983a48eb640898190d8f3c3ac84a983cd54e429807c864347d
+  sha256: 0105b03ea1c54fa0e8160825c729e416b8bd6bf3f007981b04c92ce6d5ae990b
 
 build:
   number: 0

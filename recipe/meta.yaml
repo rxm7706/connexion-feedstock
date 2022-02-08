@@ -27,7 +27,7 @@ requirements:
     - clickclick >=1.2,<21
     - flask >=1.0.4,<2
     - inflection >=0.3.1,<0.6
-    - jsonschema >=2.5.1,<4
+    - jsonschema >=2.5.1,<5
     - openapi-spec-validator >=0.2.4,<0.4
     - pyyaml >=5.1,<6
     - requests >=2.9.1,<3

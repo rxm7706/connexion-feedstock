@@ -10,7 +10,7 @@ source:
   sha256: 97ddd743a63ca8b4347bc8c26da46dcea2824cb85b562980db1cf075f415f032
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -34,11 +34,7 @@ requirements:
     - werkzeug >=1.0,<3.0
 
     # flask extra
-    - flask >=1.0.4,<2
-    # flask <2 needs jinja2<3, which is incompatible with the latest markupsafe (2.1.0)
-    # While it would be great to fix this upstream, these are some fairly old packages
-    # https://github.com/pallets/markupsafe/issues/282
-    - markupsafe >=0.23,<2.1.0
+    - flask >=1.0.4,<3
 
 test:
   imports:

@@ -34,7 +34,7 @@ requirements:
     - werkzeug >=1.0,<3.0
 
     # flask extra
-    - flask >=1.0.4,<2
+    - flask >=1.0.4,<3
     # flask <2 needs jinja2<3, which is incompatible with the latest markupsafe (2.1.0)
     # While it would be great to fix this upstream, these are some fairly old packages
     # https://github.com/pallets/markupsafe/issues/282

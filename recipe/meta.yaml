@@ -1,5 +1,5 @@
 {% set name = "connexion" %}
-{% set version = "2.11.2" %}
+{% set version = "2.12.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/connexion-{{ version }}.tar.gz
-  sha256: 97ddd743a63ca8b4347bc8c26da46dcea2824cb85b562980db1cf075f415f032
+  sha256: c08b530418a1c448d34cd142713ddd1b245e7694f45cd80533fe8538b64aa7eb
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
   entry_points:
@@ -26,7 +26,7 @@ requirements:
     - python >=3.6
     - clickclick >=1.2,<21
     - inflection >=0.3.1,<0.6
-    - jsonschema >=2.5.1,<5    
+    - jsonschema >=2.5.1,<5
     # there's a bad build openapi-spec-validator 0.3.2 giving us trouble
     - openapi-spec-validator >0.3.2,<0.4
     - pyyaml >=5.1,<6

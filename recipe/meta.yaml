@@ -1,5 +1,5 @@
 {% set name = "connexion" %}
-{% set version = "2.12.0" %}
+{% set version = "2.13.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/connexion-{{ version }}.tar.gz
-  sha256: c08b530418a1c448d34cd142713ddd1b245e7694f45cd80533fe8538b64aa7eb
+  sha256: 0ba5c163d34cb3cb3bf597d5b95fc14bad5d3596bf10ec86e32cdb63f68d0c8a
 
 build:
   number: 0
@@ -25,15 +25,18 @@ requirements:
   run:
     - python >=3.6
     - clickclick >=1.2,<21
+    # from upstream only for py<38, but let's keep it noarch: python
+    - importlib-metadata >=1
     - inflection >=0.3.1,<0.6
     - jsonschema >=2.5.1,<5
-    - pyyaml >=5.1,<6
+    - packaging >=20
+    - pyyaml >=5.1,<7
     - requests >=2.9.1,<3
     - werkzeug >=1.0,<3.0
     # note: install_requires includes flask_require:
     - flask >=1.0.4,<3
     - itsdangerous >=0.24
-
+  
 test:
   imports:
     - connexion

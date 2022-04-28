@@ -1,5 +1,5 @@
 {% set name = "connexion" %}
-{% set version = "2.13.0" %}
+{% set version = "2.13.1" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/connexion-{{ version }}.tar.gz
-  sha256: 0ba5c163d34cb3cb3bf597d5b95fc14bad5d3596bf10ec86e32cdb63f68d0c8a
+  sha256: 80b534800b408d184fe6d36e755edefdd657e8f11756b5806d6bcf7213380d0d
 
 build:
   number: 0
@@ -36,7 +36,7 @@ requirements:
     # note: install_requires includes flask_require:
     - flask >=1.0.4,<3
     - itsdangerous >=0.24
-  
+
 test:
   imports:
     - connexion

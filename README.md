@@ -1,11 +1,11 @@
-About connexion
-===============
+About connexion-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/connexion-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/zalando/connexion
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/connexion-feedstock/blob/main/LICENSE.txt)
 
 Summary: Swagger/OpenAPI First framework for Python on top of Flask with automatic endpoint validation & OAuth2 support
 
